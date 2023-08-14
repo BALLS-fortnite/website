@@ -1,20 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Julius+Sans+One:regular);
 .hero-grid {
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns:  1fr 1fr ;
     margin: 10px;
 }
 
-
+.talk-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:10px;
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
 .hero-image {
-    grid-area: 1 / 1 / 1 / 3;
+    grid-area: 1 / 1 / 1 / 2;
     background-position: center;
-    background-image: url("../images/808.png");
+    background-image: url("../images/8081.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 1080px;
-    width:1900px;
+    width:1920px;
 }
 
 .hero-title {
@@ -22,25 +28,43 @@
     text-align:left;
     position: absolute;
     font-size: 120px;
-    font-family: url(https://fonts.googleapis.com/css?family=Julius+Sans+One:regular);
-    left:40px;
+    font-family: "Julius Sans One";
+    left:50px;
 
 }
 .border-image {
-    grid-area: 1 / 2 / 1 / 3;
+    grid-area: 1 / 1 / 1 / 2;
     background-position: center;
     background-image: url("../images/mrwest.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
     border-radius: 100%;
-    height:500px;
-    width:500px;
-    position: absolute;
-    right:450px
+    height:350px;
+    width:350px;
+    position:relative;
+    left:1000px;
+    
 }
-.rectangle {
-    height: 50px;
-    width: 100px;
-    background-color: #555;
+.blend {
+    height: 20px;
+    width: 1920px;
+    background-color: rgb(246, 208, 208);
   }
+
+.separator {
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.review-number {
+    font-size: 9rem;
+    line-height: 9rem;
+    margin-top: calc(-0.25em);
+    font-family: "Julius Sans One";
+}
+.song-name { 
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
