@@ -1,18 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Julius+Sans+One:regular);
+*{margin:0}
 .hero-grid {
     display: grid;
     grid-template-columns:  1fr 1fr ;
-    margin: 10px;
+    margin: auto;
 }
 
 .talk-grid {
+    padding-top:80px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:auto;
+    margin-top:auto;
+    margin-bottom: auto;
+
 }
 /* background colour */
 body{
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(194,206,206);
 }
 .hero-image {
     grid-area: 1 / 1 / 1 / 2;
@@ -50,7 +55,9 @@ body{
 .blend {
     height: 20px;
     width: 1920px;
-    background-color: rgb(246, 208, 208);
+    background-color: rgb(223, 126, 126);
+    z-index: 1;
+    margin-top: calc(-.5em);
   }
 
 /* separator for hero grid and text grixd */
@@ -66,7 +73,7 @@ h2 {
     margin-top: calc(-0.25em);
     font-family: "Julius Sans One";
     position:relative;
-    top:50px;
+    top:-55px;
 }
 /* font info for song title */
 h3 {
@@ -79,7 +86,7 @@ h3 {
 .text-separator {
     height: 20px;
     width: 320px;
-    background-color: rgb(246, 208, 208);
+    background-color: rgb(223, 126, 126);
     margin-top: calc(-5em);
 
 }
@@ -92,4 +99,21 @@ p{
     margin-inline-end: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: rgb(9, 31, 41);
+}
+
+.talk{
+    width:80%;
+    margin:auto;
+    margin-top: 5%;
+}
+
+.college-dropout {
+    background-position: center;
+    background-image: url("../images/the-college-dropout-kanye-west-medium-standard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    width:100%;
+    position:relative;
+    align-content: center;
 }
