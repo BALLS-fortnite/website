@@ -1,24 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Julius+Sans+One:regular);
-*{margin:0}
+
+* {
+    margin: 0
+}
+
 .hero-grid {
     display: grid;
-    grid-template-columns:  1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     margin: auto;
 }
 
 .talk-grid {
-    padding-top:80px;
+    padding-top: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin:auto;
-    margin-top:auto;
+    margin: auto;
+    margin-top: auto;
     margin-bottom: auto;
 
 }
+
 /* background colour */
-body{
-    background-color: rgb(194,206,206);
+body {
+    background-color: rgb(242, 247, 242);
 }
+
 .hero-image {
     grid-area: 1 / 1 / 1 / 2;
     background-position: center;
@@ -26,18 +32,19 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 1080px;
-    width:1920px;
+    width: 1920px;
 }
 
 .hero-title {
-    align-content:start;
-    text-align:left;
+    align-content: start;
+    text-align: left;
     position: absolute;
     font-size: 120px;
     font-family: "Julius Sans One";
-    left:50px;
+    left: 50px;
 
 }
+
 .border-image {
     grid-area: 1 / 1 / 1 / 2;
     background-position: center;
@@ -46,35 +53,34 @@ body{
     background-size: cover;
     z-index: 1;
     border-radius: 100%;
-    height:350px;
-    width:350px;
-    position:relative;
-    left:1000px;
-    
+    height: 350px;
+    width: 350px;
+    position: relative;
+    left: 1000px;
+
 }
+
 .blend {
     height: 20px;
     width: 1920px;
-    background-color: rgb(223, 126, 126);
+    background-color: rgb(248, 106, 106);
     z-index: 1;
     margin-top: calc(-.5em);
-  }
-
-/* separator for hero grid and text grixd */
-  .separator {
-    position: relative;
-    padding-bottom: 1.5rem;
-    margin-bottom: 15px;
 }
+
+
+
+
 /* the numbering of each song font */
 h2 {
     font-size: 144px;
     line-height: 9rem;
     margin-top: calc(-0.25em);
     font-family: "Julius Sans One";
-    position:relative;
-    top:-55px;
+    position: relative;
+    top: -60px;
 }
+
 /* font info for song title */
 h3 {
     font-size: 35px;
@@ -84,14 +90,14 @@ h3 {
 }
 
 .text-separator {
-    height: 20px;
+    height: 5px;
     width: 320px;
-    background-color: rgb(223, 126, 126);
+    background-color: rgb(248, 106, 106);
     margin-top: calc(-5em);
 
 }
 
-p{
+p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -101,19 +107,20 @@ p{
     font-style: rgb(9, 31, 41);
 }
 
-.talk{
-    width:80%;
-    margin:auto;
+.talk {
+    width: 80%;
+    margin: auto;
     margin-top: 5%;
 }
 
 .college-dropout {
-    background-position: center;
+    grid-column: 2 / span 2;
     background-image: url("../images/the-college-dropout-kanye-west-medium-standard.png");
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: -1.5em;
     background-repeat: no-repeat;
-    background-size: cover;
-    height:100%;
-    width:100%;
-    position:relative;
-    align-content: center;
+
+   
 }
