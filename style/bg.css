@@ -93,6 +93,13 @@ h3 {
     margin-top: calc(.1em);
 }
 
+h4 {
+    font-size: 35px;
+    line-height: 2rem;
+    font-family: "Julius Sans One";
+    margin-top: calc(.1em);
+}
+
 .text-separator {
     height: 5px;
     width: 320px;
@@ -142,6 +149,7 @@ p {
     top:350px;
     left:1000px;
 }
+/* styling for the title of each song title */
 .name-title {
     grid-area: 1 / 1 / 1 / 2;
     align-content: start;
@@ -153,7 +161,7 @@ p {
     left:1100px;
     top: 210px;
 }
-
+/* styling for song review */
 .description {
     grid-area: 1 / 1 / 1 / 2;
     align-content: start;
@@ -161,15 +169,19 @@ p {
     position: relative;
     font-size: 25px;
     font-family: "Julius Sans One";
-    left:1000px;
+    left:500px;
     top: 350px;
-    align-items: center;
 }
 
-.lefty{
-margin-left: auto;
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr ;
+    background-color: azure;
+    z-index: -1;
 }
 
-.righty{
-margin-right: auto;
+.footer-info-margin {
+    width: 80%;
+    margin: auto;
+    bottom:100px;  
 }
